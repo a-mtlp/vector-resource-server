@@ -5,6 +5,6 @@ RUN mvn package
 
 FROM openjdk:17-alpine
 WORKDIR /app
-
+EXPOSE 80
 COPY --from=builder /app/target/*.jar /app/app.jar
 CMD ["java","-jar","/app/app.jar"]
