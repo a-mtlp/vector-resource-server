@@ -54,6 +54,6 @@ public class ResourceServerConfig {
     }
     @Bean
     public JwtDecoder jwtDecoder() {
-        return NimbusJwtDecoder.withJwkSetUri("http://127.0.0.1:9000/oauth2/jwks").jwsAlgorithm(SignatureAlgorithm.RS256).build();
+        return NimbusJwtDecoder.withJwkSetUri("http://113-30-191-139.cloud-xip.com/oauth2/jwks").jwsAlgorithm(SignatureAlgorithm.RS256).build();
     }
 }
